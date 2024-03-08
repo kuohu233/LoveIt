@@ -5,6 +5,14 @@
 
 {{- if $comment.enable -}}
     <div id="comments">
+        <script src="https://utteranc.es/client.js"
+            repo="kuohu233/kuohu233.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+        </script>
+        
         {{- /* Disqus Comment System */ -}}
         {{- $disqus := $comment.disqus | default dict -}}
         {{- if $disqus.enable -}}
